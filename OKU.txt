@@ -1,0 +1,79 @@
+NEW YORK GIANTS TUNNEL — KANAL KURULUMU
+========================================
+
+Takim: New York Giants | Stadyum: MetLife Stadium | Renk: Giants kirmizisi + lacivert
+Kadro 2026 sezonuna gore: Jaxson Dart, Malik Nabers, Cam Skattebo, Brian Burns,
+Abdul Carter, Andrew Thomas, koc John Harbaugh, GM Joe Schoen.
+
+Bu paket Rams-Tunnel'in son halinden uretildi: ElevenLabs adimi YOK, kuyruk
+sadece SES DOSYASI kabul ediyor. Yanlislikla birakilan bir .txt sessizce yok
+sayilir, render'i kirmaz.
+
+
+ADIM 1 — YENI DEPO AC
+---------------------
+github.com -> sag ustte + -> New repository
+  Repository name : giants-tunnel
+  Public sec
+  Add a README    -> ISARETLEME !!!
+  Create repository
+
+README kutusunu isaretlersen Rams'te oldugu gibi "unrelated histories"
+hatasi alirsin. Bos birak.
+
+
+ADIM 2 — BILGISAYARINA INDIR
+----------------------------
+Acilan sayfada  Code -> Open with GitHub Desktop
+
+
+ADIM 3 — DOSYALARI KOPYALA
+--------------------------
+Bu zip'in icindekilerin hepsini (OKU.txt haric) o klasore KOPYALA.
+Ctrl+A -> Ctrl+C -> klasorde Ctrl+V.   Ctrl+X KULLANMA.
+
+Dogru kopyaladiysan klasorde sunlar olur:
+  .git  .github  assets  content  scripts  .gitignore  channel.json
+
+README ya da .gitattributes goruyorsan yanlis kaynaktan kopyalamissin.
+
+
+ADIM 4 — GONDER
+---------------
+GitHub Desktop -> Current repository: giants-tunnel oldugundan EMIN OL
+Summary: "ilk kurulum" -> Commit to main -> Push origin
+
+
+ADIM 5 — IZIN (sart)
+--------------------
+Settings -> Actions -> General -> en altta "Workflow permissions"
+"Read and write permissions" sec -> Save
+
+API anahtarina gerek yok, sesi kendi programin uretiyor.
+
+
+ADIM 6 — STOK VIDEOLARI YUKLE
+-----------------------------
+Releases -> Create a new release
+  Tag   : broll    ("Create new tag" cikacak, tikla)
+  Title : broll
+  Giants stok videolarini surukle
+  ---> "Publish release"   ("Save draft" e BASMA)
+
+Istege bagli: music (muzik), ambient (stadyum ugultusu), photos (foto).
+
+ILK VIDEODAN ONCE bu adim ve Adim 5 bitmis olmali, yoksa video bastan
+sona kart cikar.
+
+
+ADIM 7 — ILK VIDEO
+------------------
+Ses otomasyonunun kanal listesine giants-tunnel'i ekle.
+Elle yapacaksan: mp3'u content/queue icine at, dosya adi baslik olsun,
+commit + push.
+
+Render kaydinda:
+  [assemble] b-roll: 24 clips (offset 3)
+  [assemble] kurgu karisimi: 34 stok video / ... (stok %100)
+
+"b-roll: 0 clips" -> broll release'i taslakta kalmis demektir.
